@@ -8,4 +8,5 @@
  * Author URI: http://simonhawketts.com
  * License: GPL2
  */
+ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
  
