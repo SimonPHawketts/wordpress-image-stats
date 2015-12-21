@@ -8,11 +8,14 @@ jQuery(document).on( 'jp_carousel.selectSlide', '.jp-carousel-wrap', function( e
                 //console.log( event );
                 //console.log( slides );
                 // console.log( slides[0] );
+                //console.log(event.delegateTarget);
         }
+
         //Add piwik page tracking
         var url=jQuery('div img').attr('src');
-        // console.log(url);
-        _paq.push(['setDocumentTitle', url]);
+        //console.log(event.target.ownerDocument.title);
+        _paq.push(['setCustomUrl', url]);
+        _paq.push(['setDocumentTitle', event.target.ownerDocument.title]);
         _paq.push(['trackPageView']);
 
 } )
